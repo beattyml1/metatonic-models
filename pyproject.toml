@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "supaorgs"
+version = "0.1.0"
+description = "Organization Schema, Perimssions, Role Based Access Control and Policy enforcement for PostgreSQL Row Level Security in SQL Alchemy. Requires Supabase compatible user schema."
+authors = ["Matthew Beatty"]
+license = "MIT"
+readme = "README.md"
+include = [{path="README.md"}, {path="LICENSE"}]
+packages = [
+    { include = "supaorgs", from = "." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+SQLAlchemy = "^2.0.32"
+pgalchemy = "^0.1.3"
+psycopg2 = "^2.9.9"
+
+
+[tool.poetry.group.dev.dependencies]
+alembic = "^1.14.1"
+pytest = "^8.3.4"
+pytest-snapshot = "^0.9.0"
+mock = "^5.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,1 @@
+return exists(select key from current_permissions(org_id) where key = permission);

@@ -1,0 +1,1 @@
+select key from resource_permissions_for_user(auth.uid(), org_id, res_group_id);

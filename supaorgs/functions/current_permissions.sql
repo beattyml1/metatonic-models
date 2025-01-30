@@ -1,0 +1,1 @@
+select key from permissions_for_user(auth.uid(), org_id);
