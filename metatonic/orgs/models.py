@@ -1,6 +1,6 @@
 from sqlalchemy import Column, ForeignKey, Text, Table
 from sqlalchemy.orm import relationship, declarative_base
-from pg_rls.sqlalchemy import rls_base
+from pgalchemy.rls import rls_base
 
 from .base import Base
 from .columns import BizKeyColumn, ForeignKeyColumn, ForeignKeyColumnNamed, FkTo
